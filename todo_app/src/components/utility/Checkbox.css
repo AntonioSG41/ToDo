@@ -1,0 +1,30 @@
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-box {
+    height: 1.25em;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #92929a;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    user-select: none;
+}
+
+.checkbox-box::after {
+    content: "\2714";
+    display: none;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.checkbox-input:checked+.checkbox-box::after {
+    display: block;
+}
+
+.checkbox-input:checked+.checkbox-box {
+    background: #08e;
+    border-color: #08e;
+}
