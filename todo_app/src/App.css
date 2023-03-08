@@ -44,6 +44,13 @@ a:active {
     background: #09f;
 }
 
+.icon-btn {
+    padding: 4px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 input[type=text] {
     background: none;
     border: none;
@@ -162,4 +169,19 @@ input[type=text]:active, input[type=text]:focus {
 
 #task-list-container > * {
     flex-basis: 100%;
+}
+
+.task {
+    display: inline-flex;
+    align-items: center;
+}
+
+.task-name {
+    margin: 0 8px;
+    flex-basis: 100%;
+}
+
+.task-done-toggle[data-ischecked=true] + .task-name {
+    text-decoration: line-through;
+    color: #92929a;
 }

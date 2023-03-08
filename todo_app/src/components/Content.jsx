@@ -7,8 +7,8 @@ export default function Content() {
             <div id="task-list">
                 <input type="text" id="list-name" placeholder="Untitlted"/>
                 <div id="task-list-container">
-                    <TaskElement name="New task" status="done" uIndex={54}/>
-                    <TaskElement name="" status="todo" uIndex={41}/>
+                    <TaskElement name="New task" status="todo" uIndex={0}/>
+                    <TaskElement name="" status="todo" uIndex={1}/>
                 </div>
             </div>
         </div>
