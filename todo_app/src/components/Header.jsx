@@ -12,7 +12,7 @@ export default function Header({ web }) {
                 <button className="btn">Open</button>
                 <button className="btn">New</button>
                 <div className="menu-file-name">
-                    <span>DirectAction_todo.tdl</span>
+                    <span>Untitled</span>
                 </div>
             </div>
 
