@@ -181,6 +181,8 @@ input[type=text]:active, input[type=text]:focus {
 .task {
     display: inline-flex;
     align-items: center;
+    height: 34px;
+    margin-bottom: 4px;
 }
 
 .task-name {
@@ -200,4 +202,23 @@ input[type=text]:active, input[type=text]:focus {
 .task-more-options-btn-container > .btn {
     text-align: left;
     margin-bottom: 4px;
+}
+
+#add-task-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#add-task-btn-container > .btn.icon-btn {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+#add-task-btn-container > .btn.icon-btn:last-child {
+    margin-left: 4px;
+}
+
+#add-task-btn-container > .btn.icon-btn > svg {
+    margin-right: 2px;
 }

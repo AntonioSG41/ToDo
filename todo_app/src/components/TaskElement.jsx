@@ -1,8 +1,11 @@
-import React from "react";
+import { React, useState } from "react";
 import Checkbox from "./utility/Checkbox";
 import MoreIcon from "../icons/MoreIcon";
 
 export default function TaskElement({ name, status, uIndex }) {
+
+    const [taskNameVal, setTaskNameVal] = useState(name ? name : '');
+
     return (
         <div className="task">
             <Checkbox
@@ -12,7 +15,8 @@ export default function TaskElement({ name, status, uIndex }) {
             <input type="text"
                 id={"task-name-input-" + uIndex} className="task-name"
                 placeholder="New task"
-                value={name && name != '' ? name : ''}/>
+                value={taskNameVal}
+                onChange={(e) => setTaskNameVal(e.currentTarget.value)}/>
             <button className="btn icon-btn"
                 onClick={e => {
                     const menu = document.getElementById('task-more-options-' + uIndex);
