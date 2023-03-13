@@ -27,7 +27,7 @@ export default function Content({ listSource }) {
                             uIndex={e.uIndex}/>
                     )}
                     <div id="add-task-btn-container">
-                        <button className="btn icon-btn" onClick={(e) => {
+                        <button className="btn icon-btn text-icon-btn" onClick={(e) => {
                             let newTasks = listTasks;
                             newTasks.push({ name:'', status:'todo', uIndex: e.pageX});
                             setListTasks([...newTasks]);
@@ -35,7 +35,7 @@ export default function Content({ listSource }) {
                             <AddIcon size={26} strokeWidth={2}/>
                             <span>Add Task</span>
                         </button>
-                        <button className="btn icon-btn" onClick={(e) => {
+                        <button className="btn icon-btn text-icon-btn" onClick={(e) => {
                             let newTasks = listTasks;
                             newTasks.pop();
                             setListTasks([...newTasks]);

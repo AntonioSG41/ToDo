@@ -51,6 +51,16 @@ a:active {
     justify-content: center;
 }
 
+.icon-btn.text-icon-btn {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.icon-btn.text-icon-btn > svg {
+    margin-right: 2px;
+}
+
 input[type=text] {
     background: none;
     border: none;
@@ -200,7 +210,7 @@ input[type=text]:active, input[type=text]:focus {
 }
 
 .task-more-options-btn-container > .btn {
-    text-align: left;
+    justify-content: left;
     margin-bottom: 4px;
 }
 
@@ -209,16 +219,6 @@ input[type=text]:active, input[type=text]:focus {
     justify-content: center;
 }
 
-#add-task-btn-container > .btn.icon-btn {
-    display: flex;
-    align-items: center;
-    padding-right: 8px;
-}
-
-#add-task-btn-container > .btn.icon-btn:last-child {
+#add-task-btn-container > .btn.icon-btn.text-icon-btn:last-child {
     margin-left: 4px;
-}
-
-#add-task-btn-container > .btn.icon-btn > svg {
-    margin-right: 2px;
 }
